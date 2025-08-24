@@ -15,7 +15,7 @@ const header = {
         onClick: () => openLink(getAssetPath('cv.pdf'))
     },
     logo: {
-        src: getAssetPath('photo-logo.jpg'), // Use getAssetPath utility for proper path resolution
+        src: getAssetPath('photo-logo.JPG'), // Use getAssetPath utility for proper path resolution
         alt: 'narshardulbhopi'
     },
     handleIconClick: () => scrollTo('home'),
