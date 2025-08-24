@@ -41,7 +41,7 @@ const Contact = ({ data: {
                 ref={ref}
                 className='mk-contact-zebra-img'
                 style={{
-                    backgroundImage: `url(${'/assets/arrow-sample.svg'})`,
+                    backgroundImage: `url(${'./assets/arrow-sample.svg'})`,
                 }}>
 
             </div>
