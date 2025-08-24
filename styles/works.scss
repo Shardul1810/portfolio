@@ -40,7 +40,7 @@
                     justify-content: flex-start;
                     align-items: center;
                     cursor: pointer;
-                    color: $themeColor3;
+                    color: $themeColor2; /* Changed to white for better readability */
                 }
 
                 .mk-works-tab-left-button-selected {
@@ -51,7 +51,7 @@
 
             .mk-works-tab-right {
                 flex: 1;
-                color: $themeColor3;
+                color: $themeColor2; /* Changed to white for better readability */
 
                 .mk-works-tab-right-title {
                     margin-bottom: 2px;

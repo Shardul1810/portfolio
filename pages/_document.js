@@ -6,7 +6,7 @@ export default function Document() {
       <Head>
         <link rel="shortcut icon" href="/assets/mk.svg" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link
           rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;600;700;800;900&display=swap"
@@ -21,21 +21,15 @@ export default function Document() {
         />
         <link rel="manifest" href="/manifest.json" />
         <link
-          href="../public/icons/192.png"
-          rel="icon"
-          type="image/png"
-          sizes="16x16"
-        />
-        <link
-          href="../public/icons/192.png"
+          href="/icons/192.png"
           rel="icon"
           type="image/png"
           sizes="32x32"
         />
-        <link rel="apple-touch-icon" href="../public/icons/192.png"></link>
-        <link rel="apple-touch-icon" href="../public/icons/192.png"></link>
+        <link rel="apple-touch-icon" href="/icons/192.png"></link>
+        <link rel="apple-touch-icon" href="/icons/192.png"></link>
 
-        <meta name="theme-color" content="#ffd369" />
+        <meta name="theme-color" content="#2b233b" />
       </Head>
       <body>
         <Main />

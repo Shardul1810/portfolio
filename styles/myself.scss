@@ -2,6 +2,7 @@
 
 .mk-myself {
     width: 100vw;
+    background-color: $themeColor1; /* Ensure darker background is applied */
 
     .mk-myself-settings-icon {
         svg {
@@ -30,11 +31,11 @@
             margin: 0px 0px 15px;
             font-size: 16px;
             line-height: 24px;
-            color: $themeColor3;
+            color: $themeColor2; /* Changed to white for better readability */
         }
 
         .mk-myself-skill {
-            color: $themeColor4;
+            color: $themeColor2;
             font-size: 12px;
             margin-bottom: 10px;
             line-height: 24px;
@@ -48,19 +49,19 @@
             }
         }
 
-        .mk-myself-profile-wrapper {}
-
         .mk-myself-profile-parent {
             max-width: 300px;
-            max-height: 300px;
+            max-height: 400px;
             width: 100%;
-            height: 100%;
+            height: 400px; /* Increased height for portrait mode images */
+            overflow: hidden; /* Prevent any overflow */
         }
 
         .mk-myself-profile {
             max-width: 300px;
             width: 100%;
-
+            height: 100%; /* Fill parent height */
+            object-fit: cover; /* Maintain aspect ratio and fill container */
         }
 
 
@@ -68,10 +69,13 @@
 
             .mk-myself-profile-parent {
                 max-width: 250px;
+                max-height: 320px;
+                height: 320px; /* Increased height for portrait mode on mobile */
             }
 
             .mk-myself-profile {
                 max-width: 250px;
+                height: 100%; /* Fill parent height on mobile */
             }
         }
     }

@@ -42,12 +42,12 @@
 
     .mk-reviwe-color-theme1 {
         background-color: $themeColor2;
-        color: $themeColor3;
+        color: $themeColor1; /* Changed to dark purple for contrast on white background */
     }
 
     .mk-reviwe-color-theme2 {
         background-color: $themeColor2;
-        color: $themeColor4;
+        color: $themeColor1; /* Changed to dark purple for contrast on white background */
     }
 
 

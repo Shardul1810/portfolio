@@ -57,7 +57,7 @@
                     font-size: clamp(24px, 5vw, 28px);
                     font-weight: 700;
                     line-height: 1.2;
-                    color: $themeColor4;
+                    color: $themeColor1; /* Changed to dark purple for contrast on white background */
                 }
 
                 .mk-item-platform {
@@ -65,7 +65,7 @@
                     font-size: clamp(18px, 3.7vw, 21px);
                     font-weight: 600;
                     line-height: 1.2;
-                    color: $themeColor4;
+                    color: $themeColor1; /* Changed to dark purple for contrast on white background */
                 }
 
                 .mk-item-date {
@@ -73,7 +73,7 @@
                     font-size: clamp(12px, 2.5vw, 14px);
                     font-weight: 600;
                     line-height: 1.2;
-                    color: $themeColor4;
+                    color: $themeColor1; /* Changed to dark purple for contrast on white background */
                 }
 
 

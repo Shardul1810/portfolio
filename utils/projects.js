@@ -1,75 +1,74 @@
+import { getAssetPath } from './assetPath';
+
 const projects = {
     heading: `Things I've Worked on`,
     list: [
         {
-            image: '/Portfolio/assets/projects/salesbot.jpg',
+            image: getAssetPath('projects/agentX.jpeg'),
             label: 'Featured Project',
-            title: 'SalesBot - AI-Powered Voice Assistant',
-            description: 'SalesBot is an AI-powered voice assistant designed to automate real-time customer interactions over phone calls. Using Natural Language Processing (NLP) and the Twilio API, it provides intelligent, human-like responses with an 85% accuracy rate. Optimized for low-latency performance (<600ms response time), SalesBot enhances customer support by reducing manual intervention and improving query resolution by 30%.',
+            title: 'Agent X – Hybrid Casual Detective Game',
+            description: 'Designed and developed clean, intuitive 2D UI screens for mobile, including interactive menus and clue layouts. Focused on a flat, mobile-friendly art style to ensure clarity, readability, and smooth user experience. Contributed to creating a visually engaging interface that complements the detective gameplay while maintaining simplicity for hybrid casual players.',
             techs: [
-                'Python',
-                'Flask',
-                'Twilio API',
-                'Redis',
-                'RAG',
-                'AWS',
+                'Unity',
+                'Figma',
+                'Photoshop',
+                'Premiere Pro',
+                'After Effects',
+                'Blender',
+                'Maya'
+            ],
+            links: [
+                {
+                    label: 'Project Docs',
+                    url: 'https://www.canva.com/design/DAGpd0UNrc4/mAsYGLUDEj8od30ChamxqA/view?utlId=ha6c69e2b7b'
+                },
+                {
+                    label: 'Gameplay Video',
+                    url: 'https://www.canva.com/design/DAGpd5JfT2U/wQeA24WuQznfafSOOLs1sQ/watch'
+                }
             ]
         },
         {
-            image: '/Portfolio/assets/projects/vidya-sangam.jpg',
+            image: getAssetPath('projects/maze.jpeg'),
             label: 'Featured Project',
-            title: 'Vidya Sangam - AI Mentorship Platform',
-            description: 'Vidya Sangam is an AI-powered mentorship platform that connects students with mentors based on intelligent matchmaking. Leveraging LLMs and context-aware AI, the platform achieves 90% match accuracy, supporting 1,000+ users. It integrates LinkedIn for profile authentication and Calendly for seamless scheduling, making mentorship more accessible and efficient.',
+            title: 'Apartment Escape Level with Critical Path',
+            description: 'I designed an apartment escape level built around a critical path, where players must solve puzzles and uncover clues to progress. The experience combines tasks like finding missing book pieces, arranging runes in the correct order, and interpreting environmental hints, all leading toward the final escape through a lift. The design balances exploration, puzzle-solving, and narrative flow, keeping the player engaged as each solved clue brings them closer to freedom.',
             techs: [
-                'Python',
-                'Flask',
-                'LLMs',
-                'RESTful APIs',
-                'LinkedIn API',
-                'Calendly API',
-                'AWS',
+                'Unreal Engine 5',
+                'Photoshop',
+                'Maya',
+                'Substance Painter',
+                'Substance Designer'
+            ],
+            links: [
+                {
+                    label: 'View Project',
+                    url: 'https://drive.google.com/file/d/1Y1ZbqY_4P53IKboz5HA01Rg3RqN0J0ad/view'
+                }
             ]
         },
         {
-            image: '/Portfolio/assets/projects/codecollab.jpg',
+            image: getAssetPath('projects/level-design.jpeg'),
             label: 'Featured Project',
-            title: 'CodeCollab - Real-time Collaborative Code Editor',
-            description: 'CodeCollab is a cloud-based real-time collaborative code editor that enables multiple users to code together seamlessly. Utilizing WebSocket-based low-latency communication, the platform supports multi-user sessions with advanced conflict resolution algorithms and role-based access control, improving productivity for remote development teams.',
+            title: 'Beginner Level Design',
+            description: 'I designed a beginner-friendly Action-Adventure Platformer level that introduces players to the core pillars of exploration, combat, and platforming. The level uses natural guidance elements like fireflies, paths, and sound cues, while mixing puzzles, enemy encounters, and movement challenges to create an experience that feels both intuitive and rewarding.',
             techs: [
-                'Python',
-                'Django',
-                'Django-channel',
-                'WebSockets',
-                'Redis'
-            ]
-        },
-        {
-            image: '/Portfolio/assets/projects/visudata.png',
-            label: 'Featured Project',
-            title: 'VisuData - Dynamic Data Visualization Platform',
-            description: 'VisuData is a dynamic data visualization platform built using Django that allows users to upload, visualize, and interact with large datasets in real-time. It supports CSV and JSON file uploads, offers customizable interactive charts using Matplotlib and Seaborn, and enables powerful filtering, aggregation, and export functionalities for reporting. With optimized performance and responsive design, VisuData empowers users to gain actionable insights from their data.',
-            techs: [
-                'Django',
-                'Python',
-                'Pandas',
-                'Matplotlib',
-                'Seaborn',
-                'Docker',
-                'AWS'
-            ]
-        },
-        {
-            image: '/Portfolio/assets/projects/moneyniti.png',
-            label: 'Featured Project',
-            title: 'Moneyniti - Pay Now, Buy Later',
-            description: 'Moneyniti is a financial platform that promotes the "Pay Now, Buy Later" strategy, enabling middle and lower-middle-class users to save for future purchases without relying on credit. Users can set savings goals, invest monthly, and track their progress through an intuitive dashboard. The platform leverages Django for the backend, while the frontend is built with HTML, CSS, JavaScript, and Bootstrap, deployed on Google Cloud with AMD for optimized performance.',
-            techs: [
-                'Django',
-                'Python',
-                'JavaScript',
-                'Bootstrap',
-                'Google Cloud',
-                'AMD'
+                'Level Design',
+                'Game Design',
+                'Combat Design',
+                'Platforming',
+                'Player Experience',
+                'Gameplay Balancing'
+            ],
+            links: [
+                {
+                    label: 'Gameplay Video',
+                    url: 'https://www.canva.com/design/DAGgIWbo3bo/jtBpVbwop09v7zTRQ0PPbA/watch'
+                },
+                {
+                    label: 'Game Document',
+                    url: 'https://www.canva.com/design/DAGi_3VDBA0/mZs0ia_wA4fOrJ-pD_ZwIQ/view?utlId=h2a7f98f1f8'
+                }
             ]
         }
     ]

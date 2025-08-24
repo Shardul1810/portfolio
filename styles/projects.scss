@@ -27,11 +27,16 @@
         }
 
         .mk-projects-image-container {
-            width: 120%;
+            width: 100%; /* Fixed: Changed from 120% to prevent overflow */
+            max-width: 100%;
+            overflow: hidden; /* Prevent any content overflow */
             box-shadow: 0 10px 30px -15px $themeColor2;
 
             .mk-image {
                 width: 100%;
+                height: 400px; /* Set explicit height for consistent display */
+                object-fit: cover; /* Maintain aspect ratio while filling container */
+                border-radius: $defaultBorder;
             }
 
             .mk-taskbar {
@@ -40,13 +45,13 @@
         }
 
         .mk-projects-image-container-right {
-            margin-left: -20%;
+            margin-left: 0; /* Fixed: Removed negative margin to prevent overflow */
         }
 
 
         .mk-projects-text-side {
             max-width: 100%;
-            color: $themeColor3;
+            color: $themeColor2; /* Changed to white for better readability */
 
             .mk-projects-text-featured {
                 margin: 10px 0px;
@@ -67,8 +72,8 @@
                 position: relative;
                 padding: 25px;
                 border-radius: $defaultBorder;
-                background-color: $themeColor2;
-                color: $themeColor4;
+                background-color: $themeColor4;
+                color: $themeColor2;
                 font-size: 14px;
 
                 display: flex;
@@ -76,10 +81,15 @@
 
                 .mk-text-image-container {
                     width: 100%;
+                    max-width: 100%;
+                    overflow: hidden; /* Prevent overflow in mobile view */
                     box-shadow: 0 10px 30px -15px $themeColor1;
 
                     .mk-image {
                         width: 100%;
+                        height: 250px; /* Smaller height for mobile/text section */
+                        object-fit: cover; /* Maintain aspect ratio */
+                        border-radius: $defaultBorder;
                     }
 
                     .mk-taskbar {
@@ -94,6 +104,55 @@
                 line-height: 1;
                 font-size: 13px;
             }
+
+            .mk-projects-links {
+                margin-top: 30px;
+                display: flex;
+                gap: 15px;
+                flex-wrap: wrap;
+
+                .mk-project-link-button {
+                    background-color: transparent;
+                    color: $themeColor4;
+                    border: 2px solid $themeColor4;
+                    border-radius: $defaultBorder;
+                    padding: 10px 20px;
+                    font-size: 14px;
+                    font-weight: 600;
+                    cursor: pointer;
+                    text-decoration: none;
+                    transition: $allTransitoin3s;
+                    position: relative;
+                    overflow: hidden;
+                    z-index: 1;
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        left: -100%;
+                        width: 100%;
+                        height: 100%;
+                        background-color: $themeColor4;
+                        transition: $allTransitoin3s;
+                        z-index: -1;
+                    }
+
+                    &:hover {
+                        color: $themeColor2;
+                        border-color: $themeColor4;
+                        transform: translateY(-2px);
+
+                        &::before {
+                            left: 0;
+                        }
+                    }
+
+                    &:active {
+                        transform: translateY(0);
+                    }
+                }
+            }
         }
 
         .mk-projects-text-side-left {
@@ -108,6 +167,40 @@
             flex-direction: column;
             align-items: flex-end;
             text-align: right;
+        }
+
+        /* Responsive adjustments for mobile devices */
+        @media only screen and (max-width: 768px) {
+            .mk-projects-image-container {
+                .mk-image {
+                    height: 300px; /* Slightly smaller on mobile */
+                }
+            }
+            
+            .mk-text-image-container {
+                .mk-image {
+                    height: 200px; /* Smaller height for mobile text sections */
+                }
+            }
+
+            .mk-projects-links {
+                margin-top: 20px;
+                flex-direction: column;
+                align-items: flex-start;
+                
+                .mk-project-link-button {
+                    width: 100%;
+                    text-align: center;
+                    padding: 12px 20px;
+                    font-size: 16px;
+                }
+            }
+            
+            .mk-projects-text-side-left {
+                .mk-projects-links {
+                    align-items: flex-end;
+                }
+            }
         }
     }
 }

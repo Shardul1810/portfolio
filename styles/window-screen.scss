@@ -26,15 +26,15 @@
         }
 
         .mk-circle1 {
-            background-color: #ef4444;
+            background-color: #431852; /* Second dark gray purple */
         }
 
         .mk-circle2 {
-            background-color: #f59e0b;
+            background-color: #594f6a; /* Gray purple */
         }
 
         .mk-circle3 {
-            background-color: #10b981;
+            background-color: #7f85ae; /* Gray blue */
         }
 
         .mk-url {
@@ -43,13 +43,13 @@
             justify-content: center;
 
             .mk-url-box {
-                background-color: #00000030;
+                background-color: rgba(67, 24, 82, 0.3); /* Using second dark gray purple with transparency */
                 font-size: 14px;
                 padding: 5px;
                 width: 70%;
                 text-align: center;
                 border-radius: $defaultBorder;
-                color: #ffffff60;
+                color: $themeColor2; /* Changed to white for better visibility */
                 white-space: nowrap;
                 overflow: hidden;
                 text-overflow: ellipsis;

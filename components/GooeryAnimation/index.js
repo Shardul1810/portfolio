@@ -17,7 +17,7 @@ export default function Gooery() {
   const [{ pos2 }] = useSpring({ pos2: pos1, config: slow })
   const [{ pos3 }] = useSpring({ pos3: pos2, config: slow })
   // Effect for fetching mouse coordinates
-  useEffect(  () => {
+  useEffect(() => {
     // "set" updates the first spring, the other springs are bound and will follow.
     // It won't cause a new render pass and the animated values down in the view
     // will still naturally reflect animated changes.
@@ -26,7 +26,7 @@ export default function Gooery() {
     }
     window.addEventListener('mousemove', handler)
     return () => window.removeEventListener('mousemove', handler)
-  }, [])
+  }, [set])
   // We render the view like always, but we're using animated.el whereever
   // animated values are being used. Just like with regular "native" springs this
   // makes elements transient.

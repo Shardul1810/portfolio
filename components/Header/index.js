@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import MK from '../SVGs/MK'
 import Hamburger from '../SVGs/Hamburger'
 import CurvedText from '../CurvedText';
-import Image from 'next/image';
+// import Image from 'next/image'; // Replaced with img tag for export compatibility
 
 const getMenuItemOpacity = ({ menus, i }) => {
     const length = (menus || []).length;
@@ -68,7 +68,12 @@ const Header = ({ data: { menus, handleItemSelect, handleIconClick, rightBtn, lo
                         <MK onClick={handleIconClick} width={45} height={45} />
                     ) : (
                         <div onClick={handleIconClick} className='mk-logo-bg'>
-                            <Image width={60} height={60} src={logo.src} alt={logo.alt} />
+                            <img 
+                                width={60} 
+                                height={60} 
+                                src={logo.src} 
+                                alt={logo.alt}
+                            />
                         </div>
                     )}
                 </div>

@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Image from 'next/image'
+// import Image from 'next/image' // Not used, replaced with img tag for export compatibility
 
 
 const HoverImage = ({ parentClassName, imageClassName, filterClassName, borderClassName, showFilter, showBorder, src }) => {

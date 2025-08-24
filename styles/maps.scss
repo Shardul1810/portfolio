@@ -25,7 +25,7 @@
                 font-weight: 700;
                 // line-height: 1;
                 line-height: 1.5;
-                color: $themeColor3;
+                color: $themeColor1; /* Changed to dark purple for contrast on white background */
             }
 
             .mk-box-subheading {
@@ -34,7 +34,7 @@
                 font-size: clamp(14px, 4vw, 18px);
                 font-weight: 500;
                 line-height: 1.5;
-                color: $themeColor4;
+                color: $themeColor1; /* Changed to dark purple for contrast on white background */
 
             }
 
@@ -45,7 +45,7 @@
                 font-size: clamp(14px, 6vw, 16px);
                 font-weight: 400;
                 line-height: 1.5;
-                color: $themeColor4;
+                color: $themeColor1; /* Changed to dark purple for contrast on white background */
                 margin-top: 4%;
 
             }

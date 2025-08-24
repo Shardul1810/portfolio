@@ -1,22 +1,22 @@
 import { openLink, scrollTo } from "./methods";
-
+import { getAssetPath } from "./assetPath";
 
 const header = {
     menus: [
         { title: 'Home', id: 'home' },
         { title: 'My Selft', id: 'my-self' },
-        { title: 'Experience', id: 'experience' },
+        { title: 'Education', id: 'education' },
         { title: 'My Work', id: 'my-work' },
-        { title: 'Achievements', id: 'certifications' },
+        { title: 'Certifications', id: 'certifications' },
         { title: 'Contact', id: 'contact' },
     ],
     rightBtn: {
         label: 'Curriculum Vitae | CV',
-        onClick: () => openLink('assets/cv.pdf')
+        onClick: () => openLink(getAssetPath('cv.pdf'))
     },
     logo: {
-        src: '/assets/photo-logo.png',
-        alt: 'vivekdevkar'
+        src: getAssetPath('photo-logo.jpg'), // Use getAssetPath utility for proper path resolution
+        alt: 'narshardulbhopi'
     },
     handleIconClick: () => scrollTo('home'),
     handleItemSelect: (menu) => scrollTo(menu.id),

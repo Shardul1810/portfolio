@@ -36,8 +36,13 @@ const SingleProject = (props) => {
 }
 
 const ProjectTextSide = (props) => {
-    const { label, title, description, techs, index, image } = props
+    const { label, title, description, techs, index, image, links } = props
     const side = getSide(index);
+    
+    const handleLinkClick = (url) => {
+        window.open(url, '_blank', 'noopener,noreferrer');
+    };
+
     return (
         <div
             data-aos={`fade-down-${side}`}
@@ -63,6 +68,21 @@ const ProjectTextSide = (props) => {
                 className='mk-projects-text-tecs'>
                 {techs.map((tech, i) => `${tech} ${techs.length - 1 !== i ? ' | ' : ''}`)}
             </div>
+            {links && links.length > 0 && (
+                <div
+                    data-aos={`zoom-in-${side}`}
+                    className='mk-projects-links'>
+                    {links.map((link, i) => (
+                        <button
+                            key={i}
+                            onClick={() => handleLinkClick(link.url)}
+                            className='mk-project-link-button'
+                        >
+                            {link.label}
+                        </button>
+                    ))}
+                </div>
+            )}
         </div>
     )
 }

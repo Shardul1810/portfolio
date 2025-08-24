@@ -5,8 +5,7 @@ import GitHub from '../SVGs/GitHub'
 import Instagram from '../SVGs/Instagram'
 import LinkedIn from '../SVGs/LinkedIn'
 import Twitter from '../SVGs/Twitter'
-import Codechef from '../SVGs/Codechef'
-import Leetcode from '../SVGs/Leetcode'
+
 
 const SideElementsItem = ({ items, position }) => {
     return (
@@ -36,8 +35,6 @@ const SideElements = ({ data: {
                     <Instagram onClick={() => handleIconClick('instagram')} key="Instagram" width={20} height={20} />,
                     <Twitter onClick={() => handleIconClick('twitter')} key="Twitter" width={20} height={20} />,
                     <LinkedIn onClick={() => handleIconClick('linkedin')} key="LinkedIn" width={20} height={20} />,
-                    <Codechef onClick={() => handleIconClick('codechef')} key="Codechef" width={20} height={20} />,
-                    <Leetcode onClick={() => handleIconClick('leetcode')} key="Leetcode" width={20} height={20} />,
                 ]}
             />
 

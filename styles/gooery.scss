@@ -27,7 +27,7 @@ $circleDividant: var(--circleDividant);
     will-change: transform;
     border-radius: 50%;
     background-color: $themeColor2;
-    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 5px 0px rgba(43, 35, 59, 0.75); /* Using dark gray purple for shadow */
     opacity: 0.6;
   }
 
@@ -58,7 +58,7 @@ $circleDividant: var(--circleDividant);
     width: calc(50vw/$circleDividant);
     height: calc(50vw/$circleDividant);
     border-radius: 50%;
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(153, 159, 201, 0.3); /* Using second gray blue with transparency */
   }
 
   .b2::after {
