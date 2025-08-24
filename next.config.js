@@ -9,8 +9,8 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: false, // Disable SWC minification to fix WASM build issues on Windows
   trailingSlash: true,
-  // basePath: "", // Removed to fix config error
-  // assetPrefix: "", // Removed to fix config error
+  basePath: "/portfolio", // Required for GitHub Pages subdirectory deployment
+  assetPrefix: "/portfolio", // Required for proper asset loading on GitHub Pages
 };
 
 module.exports = withPWA(nextConfig);
