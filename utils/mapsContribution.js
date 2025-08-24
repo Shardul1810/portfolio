@@ -2,7 +2,7 @@ const mapsContribution = {
   heading: `GSV Contribution`,
   data: [
     {
-      logo: "./assets/streeviewtrusted.png",
+      logo: "/portfolio/assets/streeviewtrusted.png",
       title: "Google Street View",
       description: `Covered most of the 360
     Street View of Karachi,

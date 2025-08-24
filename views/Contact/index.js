@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import { useParallax } from 'react-scroll-parallax';
 import Star from '../../components/SVGs/Star';
 import GitFork from '../../components/SVGs/GitFork';
+import { getAssetPath } from '../../utils/assetPath';
 
 const Contact = ({ data: {
     label,
@@ -41,7 +42,7 @@ const Contact = ({ data: {
                 ref={ref}
                 className='mk-contact-zebra-img'
                 style={{
-                    backgroundImage: `url(${'./assets/arrow-sample.svg'})`,
+                    backgroundImage: `url(${getAssetPath('arrow-sample.svg')})`,
                 }}>
 
             </div>
