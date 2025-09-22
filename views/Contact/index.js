@@ -20,7 +20,7 @@ const Contact = ({ data: {
     });
 
     useEffect(() => {
-        fetch('https://api.github.com/repos/vivekdevkar123/portfolio')
+        fetch('https://api.github.com/repos/Shardul1810/portfolio')
             .then(response => response.json())
             .then(json => {
                 const { stargazers_count, forks_count } = json;
