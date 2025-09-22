@@ -31,7 +31,7 @@ const mySelf = {
         'Creative problem solving',
         'Teamwork and collaboration',
     ],    
-    image: '/portfolio/assets/profile1.JPG',
+    image: '/portfolio/assets/profile1.jpg',
 }
 
 export default mySelf
